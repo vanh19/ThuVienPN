@@ -18,13 +18,13 @@ public class ManHinhChaoActivity extends AppCompatActivity {
 
 
         ImageView ivLogo = findViewById(R.id.ivLogo);
-        Glide.with(this).load(R.mipmap.ic_launcher).into(ivLogo);
+        Glide.with(this).load(R.mipmap.welcome).into(ivLogo);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(ManHinhChaoActivity.this, DangNhapActivity.class));
             }
-        }, 3000);
+        }, 5000);
     }
 }

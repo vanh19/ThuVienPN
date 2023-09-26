@@ -2,18 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="#37D2E6"
+    android:background="#0A8AEF"
     android:gravity="center">
     
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/abac"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chào Mừng Bạn Đến Với Thư Viện Ảo"
-        android:textSize="30sp"/>
+        android:textSize="25sp"/>
 
 
 </LinearLayout>

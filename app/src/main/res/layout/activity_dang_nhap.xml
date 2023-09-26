@@ -7,29 +7,36 @@
     tools:context=".DangNhapActivity"
     android:orientation="vertical">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="#DDFF0000"
-        android:textSize="40sp"
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:textStyle="italic"/>
+        android:src="@mipmap/login"/>
     <EditText
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
         android:id="@+id/edtUser"
         android:hint="Nhap User"/>
     <EditText
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edtPass"
         android:hint="Nhap Pass"/>
+
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/btnLogin"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Login"
-        android:id="@+id/btnLogin"/>
+        android:backgroundTint="#0A8AEF"/>
 
 </LinearLayout>
