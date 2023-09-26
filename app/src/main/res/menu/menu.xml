@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/mQLPhieuMuon"
+      android:title="Quản Lý Phiếu Mượn"
+      android:icon="@drawable/home_24"/>
+    <item android:id="@+id/mQLLoaiSach"
+          android:title="Quản Lý Loại Sách"
+        android:icon="@drawable/collections_bookmark_24"/>
+    <item android:id="@+id/mQLSach"
+        android:title="Quản Lý Sách"
+        android:icon="@drawable/book_24"/>
+    <item android:id="@+id/mQLThanhVien"
+        android:title="Quản Lý Thành Viên"
+        android:icon="@drawable/account_24"/>
+    <item android:title="Thống Kê">
+      <menu>
+        <item android:id="@+id/mTop10"
+          android:title="Top 10 sách bán nhiều nhất"
+          android:icon="@drawable/baseline_vertical_align_top_24"/>
+        <item android:id="@+id/mDoanhThu"
+            android:title="Doanh Thu"
+            android:icon="@drawable/show_chart_24"/>
+      </menu>
+    </item>
+  <item android:title="Người Dùng">
+    <menu>
+      <item android:id="@+id/mDoiMatKhau"
+        android:title="Đổi mật khẩu"
+        android:icon="@drawable/password_24"/>
+      <item android:icon="@drawable/exit_to_app_24"
+          android:id="@+id/mThoat"
+          android:title="Thoát"/>
+    </menu>
+  </item>
+</menu>
