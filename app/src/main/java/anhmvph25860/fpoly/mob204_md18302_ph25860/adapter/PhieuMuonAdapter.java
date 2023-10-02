@@ -37,7 +37,7 @@ public class PhieuMuonAdapter extends RecyclerView.Adapter<PhieuMuonAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.txtMaPM.setText("Mã PM: " + list.get(position).getMapm());
+        holder.txtMaPM.setText("Mã PM:  " + list.get(position).getMapm());
         holder.txtMaTV.setText("Mã TV: " + list.get(position).getMatv());
         holder.txtTenTV.setText("Tên TV: " + list.get(position).getTentv());
         holder.txtMaTT.setText("Mã TT: " + list.get(position).getMatt());
@@ -47,14 +47,14 @@ public class PhieuMuonAdapter extends RecyclerView.Adapter<PhieuMuonAdapter.View
         holder.txtNgay.setText("Ngày:" + list.get(position).getNgay());
         String trangthai = "";
         if (list.get(position).getTrasach() == 1){
-            trangthai = "Đã Trả Sách: ";
+            trangthai = "Đã Trả Sách ";
             holder.btnTraSach.setVisibility(View.GONE);
         }else {
-            trangthai = "Chưa Trả Sách: ";
+            trangthai = "Chưa Trả Sách ";
             holder.btnTraSach.setVisibility(View.VISIBLE);
         }
-        holder.txtTrangThai.setText("Trạng Thái" + trangthai);
-        holder.txtTien.setText("Mã PM:" + list.get(position).getMapm());
+        holder.txtTrangThai.setText("Trạng Thái: " + trangthai);
+        holder.txtTien.setText("Tiền:" + list.get(position).getTienthue());
 
         holder.btnTraSach.setOnClickListener(new View.OnClickListener() {
             @Override
