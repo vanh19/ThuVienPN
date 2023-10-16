@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
 public class ManHinhChaoActivity extends AppCompatActivity {
+    ImageView ivLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,14 +19,21 @@ public class ManHinhChaoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_man_hinh_chao);
 
 
-        ImageView ivLogo = findViewById(R.id.ivLogo);
+        ivLogo = findViewById(R.id.ivLogo);
         Glide.with(this).load(R.mipmap.welcome).into(ivLogo);
 
-        new Handler().postDelayed(new Runnable() {
+        ivLogo.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
+            public void onClick(View view) {
                 startActivity(new Intent(ManHinhChaoActivity.this, DangNhapActivity.class));
             }
-        }, 5000);
+        });
+
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                startActivity(new Intent(ManHinhChaoActivity.this, DangNhapActivity.class));
+//            }
+//        }, 5000);
     }
 }

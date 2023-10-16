@@ -29,10 +29,10 @@ public class DbHelper extends SQLiteOpenHelper {
         //data mau
         sqLiteDatabase.execSQL("INSERT INTO LOAISACH VALUES (1, 'Thiếu nhi'),(2,'Tình cảm'),(3, 'Giáo khoa')");
         sqLiteDatabase.execSQL("INSERT INTO SACH VALUES (1, 'Hãy đợi đấy', 2500, 1), (2, 'Thằng cuội', 1000, 1), (3, 'Lập trình Android', 2000, 3)");
-        sqLiteDatabase.execSQL("INSERT INTO THUTHU VALUES ('thuthu01','Nguyễn Văn Anh','abc123'),('thuthu02','Trần Văn Hùng','123abc')");
-        sqLiteDatabase.execSQL("INSERT INTO THANHVIEN VALUES (1,'Cao Thu Trang','2000'),(2,'Trần Mỹ Kim','2000')");
+        sqLiteDatabase.execSQL("INSERT INTO THUTHU VALUES ('VA01','Mai Việt Anh','abc123'),('VA02','Mai Anh Việt','123abc')");
+        sqLiteDatabase.execSQL("INSERT INTO THANHVIEN VALUES (1,'Mai Việt Anh','2000'),(2,'Mai Anh Việt','2000')");
         //trả sách: 1: đã trả - 0: chưa trả
-        sqLiteDatabase.execSQL("INSERT INTO PHIEUMUON VALUES (1,1,'thuthu01', 1, '19/03/2022', 1, 2500),(2,1,'thuthu01', 3, '19/03/2022', 0, 2000),(3,2,'thuthu02', 1, '19/03/2022', 1, 2000)");
+        sqLiteDatabase.execSQL("INSERT INTO PHIEUMUON VALUES (1,1,'VA01', 1, '19/03/2022', 1, 2500),(2,1,'VA02', 3, '19/03/2022', 0, 2000),(3,2,'VA01', 1, '19/03/2022', 1, 2000)");
 
 
            }
